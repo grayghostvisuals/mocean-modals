@@ -1,0 +1,119 @@
+@import "mocean-modal-vars";
+@import "mocean-modal-styling.scss";
+
+// Mocean Effect: 3D flip horizontal
+.flip-horizontal-3D {
+	perspective: $mocean-perspective;
+}
+
+.flip-horizontal-3D .mocean-content {
+	transform: rotateY(-70deg);
+	transform-style: preserve-3d;
+	opacity: 0;
+}
+
+.mocean-show.flip-horizontal-3D .mocean-content {
+	transform: rotateY(0deg);
+	opacity: 1;
+}
+
+
+// Mocean Effect: 3D flip vertical
+.flip-vertical-3D {
+	perspective: $mocean-perspective;
+}
+
+.flip-vertical-3D .mocean-content {
+	transform: rotateX(-70deg);
+	transform-style: preserve-3d;
+	opacity: 0;
+}
+
+.mocean-show.flip-vertical-3D .mocean-content {
+	transform: rotateX(0deg);
+	opacity: 1;
+}
+
+
+// Mocean Effect: 3D sign
+.sign-3D {
+	perspective: $mocean-perspective;
+}
+
+.sign-3D .mocean-content {
+	transform: rotateX(-60deg);
+	transform-origin: 50% 0;
+	transform-style: preserve-3d;
+	opacity: 0;
+}
+
+.mocean-show.sign-3D .mocean-content {
+	transform: rotateX(0deg);
+	opacity: 1;
+}
+
+
+// Mocean Effect: 3D Slit
+.slit-3D {
+	perspective: $mocean-perspective;
+}
+
+.slit-3D .mocean-content {
+	transform: translateZ(-3000px) rotateY(90deg);
+	transform-style: preserve-3d;
+	opacity: 0;
+}
+
+.mocean-show.slit-3D .mocean-content {
+	animation: modalSlit 0.7s forwards ease-out;
+}
+
+@keyframes modalSlit {
+	50% {
+		transform: translateZ(-250px) rotateY(89deg);
+		opacity: 0.75;
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: translateZ(0) rotateY(0deg);
+		opacity: 1;
+	}
+}
+
+
+// Mocean Effect:  3D Rotate from bottom
+.rotate-from-bottom-3D {
+	perspective: $mocean-perspective;
+}
+
+.rotate-from-bottom-3D .mocean-content {
+	transform: translateY(100%) rotateX(90deg);
+	transform-style: preserve-3d;
+	transform-origin: 0 100%;
+	opacity: 0;
+}
+
+.mocean-show.rotate-from-bottom-3D .mocean-content {
+	transform: translateY(0%) rotateX(0deg);
+	opacity: 1;
+}
+
+
+// Mocean Effect:  3D Rotate in from left
+.rotate-from-left-3D {
+	perspective: $mocean-perspective;
+}
+
+.rotate-from-left-3D .mocean-content {
+	transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+	transform-style: preserve-3d;
+	transform-origin: 0 100%;
+	opacity: 0;
+}
+
+.mocean-show.rotate-from-left-3D .mocean-content {
+	transform: translateZ(0px) translateX(0%) rotateY(0deg);
+	opacity: 1;
+}
+
+@import "mocean-modal-utilities.scss";

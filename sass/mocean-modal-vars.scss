@@ -1,0 +1,21 @@
+//------------------------------------------------------------
+// Mocean SliderModals
+// What follows is a rebirth of work from the Effeckt project.
+// RIP Effeckt Project…You were loved by many.
+// http://h5bp.github.io/Effeckt.css
+//------------------------------------------------------------
+
+// 3D & Speed
+$mocean-transition-duration: 500ms !default;
+$mocean-perspective: 600px !default;
+
+// Motion
+$mocean-modal-transition-duration: 500ms !default;
+$mocean-modal-animation-duration: $mocean-modal-transition-duration*2 !default;
+
+// Color
+$mocean-modal-bg: #0D47A1 !default;
+
+// Size
+$mocean-modal-max-width: 320px !default;
+$mocean-modal-z-index: 2000 !default;

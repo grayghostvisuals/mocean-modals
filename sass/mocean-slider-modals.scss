@@ -1,0 +1,74 @@
+@import "mocean-modal-vars";
+@import "mocean-modal-styling.scss";
+
+// Effect: Slide from the top
+.slide-in-top .mocean-content {
+	transform: translate3d(0, -100%, 0);
+	opacity: 0;
+}
+
+.mocean-show.slide-in-top .mocean-content {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+
+
+// Effect: Slide from the right
+.slide-in-right .mocean-content {
+	transform: translate3d(30%, 0, 0);
+	opacity: 0;
+}
+
+.mocean-show.slide-in-right .mocean-content {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+
+// Effect: Slide from the bottom
+.slide-in-bottom .mocean-content {
+	transform: translate3d(0, 30%, 0);
+	opacity: 0;
+}
+
+.mocean-show.slide-in-bottom .mocean-content {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+
+// Effect: Slide from the left
+.slide-in-left .mocean-content {
+	transform: translate3d(-30%, 0, 0);
+	opacity: 0;
+}
+
+.mocean-show.slide-in-left .mocean-content {
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+
+
+// Mocean Out: Slide Out Bottom
+.slide-out-bottom .mocean-content {
+	transform: translateY(100%);
+	opacity: 0;
+}
+
+// Mocean Out: Slide Out Top
+.slide-out-top .mocean-content {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+// Mocean Out: Slide Out Right
+.slide-out-right .mocean-content {
+	transform: translateX(100%);
+	opacity: 0;
+}
+
+// Mocean Out: Slide Out Left
+.slide-out-left .mocean-content {
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+@import "mocean-modal-utilities.scss";
